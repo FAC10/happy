@@ -29,3 +29,16 @@ The app is aimed at young users, ages 12-18, and the goal is to help them mainta
 - Review memories and see which have been successful in cheering you up
 - Access all memories in case user wants to delete them at any time
 - User can change the avatar and colour so the experience feels more personalised
+
+## Tech Stack
+We will be using the following stack:
+
+- Node.js
+- Express
+- postgreSQL
+- Handlebars.js
+
+**Tools**
+
+- Heroku (consider AWS / S3)
+
