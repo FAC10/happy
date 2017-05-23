@@ -252,11 +252,14 @@ margin-left: 11px;
 }
 .modal {
   background-color: white;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  margin: 0 auto;
   display: none;
 }
-
 
 * {
 	box-sizing: border-box;
@@ -479,4 +482,11 @@ input {
   font-family: 'Lato', cursive;
   font-weight: bold;
   color: #8ea5ce;
+
+.modal-content {
+  font-family: 'Lato', sans-serif;
+}
+
+.close {
+  font-size: 20px;
 }
