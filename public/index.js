@@ -278,7 +278,7 @@ var width = 600 - margin.left - margin.right,
 var color = d3.scale.category20b();
 
 var force = d3.layout.force()
- .charge(-200)
+ .charge(-1000)
  .linkDistance(50)
  .size([width + margin.left + margin.right, height + margin.top + margin.bottom]);
 
@@ -350,7 +350,7 @@ var initForce = function() {
 //       container.append("path")
        .datum(d)
        .attr("class", "link")
-       .style("stroke-width", 6)
+       .style("stroke-width", 20)
        .style("stroke","white")
 
        // delay on line appearing - do i need i * 10 ???
@@ -361,9 +361,9 @@ var initForce = function() {
        }) //do i need this ?
        .duration(350)
        .style("stroke-width", function(d) {
-         return Math.sqrt(d.value);
+         return Math.sqrt(d.value+50);
        })
-     .style("stroke", '#f16a5d')
+     .style("stroke", 'white')
      ;
 
      nodes.forEach(function(node) {
@@ -385,10 +385,10 @@ var initForce = function() {
        nodeG.append("circle")
          .style('opacity', 0)
          .attr("r", function(d) {
-             d.radius = d.weight * 2 + 5;
+             d.radius = d.weight * 2 + 15;
              return d.radius;
          })
-        .style("fill", "#f16a5d")
+        .style("fill", "white")
          // delay on line appearing - do i need i * 10 ???
          // delay is half delay of node.
          .transition()
