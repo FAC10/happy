@@ -6,61 +6,50 @@
   <script src="https://d3js.org/d3.v3.min.js"></script>
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
           rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Lato" rel="stylesheet">
       <link rel="stylesheet" href="./public/style.css">
 </head>
 
 <body>
-  <div id="map">
-    <button id='reset' title='Reset Layout to Beginning'>
-        <i class='fa fa-undo'></i>
-    </button>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+  <h1 class="app-title">happy</h1>
+  <div class="form-wrap">
+    <div class="tabs">
+      <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+      <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+    </div><!--.tabs-->
 
-    </div>
-</div>
+    <div class="tabs-content">
+      <div id="signup-tab-content" class="active">
+        <form class="signup-form" action="home.html" method="post">
+          <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+          <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
+          <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+          <input type="submit" class="button" value="Sign Up">
+        </form><!--.login-form-->
+        <div class="help-text">
+          <p>By signing up, you agree to our</p>
+          <p><a href="#">Terms of service</a></p>
+        </div><!--.help-text-->
+      </div><!--.signup-tab-content-->
+
+      <div id="login-tab-content">
+        <form class="login-form" action="home.html" method="post">
+          <input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
+          <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+          <input type="checkbox" class="checkbox" id="remember_me">
+          <label for="remember_me">Remember me</label>
+
+          <input type="submit" class="button" value="Login">
+        </form><!--.login-form-->
+        <div class="help-text">
+          <p><a href="#">Forget your password?</a></p>
+        </div><!--.help-text-->
+      </div><!--.login-tab-content-->
+    </div><!--.tabs-content-->
+  </div><!--.form-wrap-->
 
 
-<script type="text/javascript" src="./public/index.js"></script>
-
-<nav class="menu">
-  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-  <label class="menu-open-button" for="menu-open">
-    <span class="hamburger hamburger-1"></span>
-    <span class="hamburger hamburger-2"></span>
-    <span class="hamburger hamburger-3"></span>
-  </label>
-
-  <a href="#" class="menu-item"> <i class="fa fa-pencil"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-camera"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-microphone"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-clock-o"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-cog"></i> </a>
-
-</nav>
+<script type="text/javascript" src="./public/signup.js"></script>
 
 
-<!-- filters -->
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-          <!-- <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-          <feBlend in2="shadow" in="goo" result="goo" /> -->
-          <feBlend in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feBlend in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-</svg>
 </body>
