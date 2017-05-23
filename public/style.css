@@ -241,3 +241,9 @@ margin-left: 11px;
 .fa {
   line-height: 3.5;
 }
+.modal {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: none;
+}

@@ -376,8 +376,17 @@ var initForce = function() {
          .attr("cy", function(d) {
            return d.y;
          })
+         .on("click", function(){
+           var modal = document.getElementById('myModal');
+           modal.style.display = "block";
+         })
          .call(drag);
 
+         var close = document.getElementsByClassName("close")[0];
+         close.onclick = function(){
+           var modal = document.getElementById('myModal');
+           modal.style.display = "none";
+         }
 
 
        // add node
