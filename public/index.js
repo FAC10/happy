@@ -279,7 +279,7 @@ var color = d3.scale.category20b();
 
 var force = d3.layout.force()
  .charge(-1000)
- .linkDistance(50)
+ .linkDistance(5)
  .size([width + margin.left + margin.right, height + margin.top + margin.bottom]);
 
 var zoom = d3.behavior.zoom()
@@ -350,7 +350,7 @@ var initForce = function() {
 //       container.append("path")
        .datum(d)
        .attr("class", "link")
-       .style("stroke-width", 20)
+       .style("stroke-width", 5)
        .style("stroke","white")
 
        // delay on line appearing - do i need i * 10 ???
@@ -361,7 +361,7 @@ var initForce = function() {
        }) //do i need this ?
        .duration(350)
        .style("stroke-width", function(d) {
-         return Math.sqrt(d.value+50);
+         return Math.sqrt(d.value);
        })
      .style("stroke", 'white')
      ;
@@ -394,7 +394,7 @@ var initForce = function() {
        nodeG.append("circle")
          .style('opacity', 0)
          .attr("r", function(d) {
-             d.radius = d.weight * 2 + 15;
+             d.radius = d.weight * 2;
              return d.radius;
          })
         .style("fill", "white")
