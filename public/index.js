@@ -616,14 +616,27 @@ $('#pencil').on('click', () => {
 $('#camera').on('click', () => {
   console.log('clicked');
   $('.menu-open:checked ~ #camera').removeClass('normal').addClass('wipe');
+
+  var errorCallback = function(e) {
+    console.log('Reeeejected!', e);
+  };
+
+  navigator.getUserMedia({video: true}, function(localMediaStream) {
+    document.querySelector('video').srcObject = localMediaStream;
+    document.querySelector('video').play();
+  }, errorCallback);
+
   setTimeout(function () {
     $('.menu-open:checked ~ #camera').addClass('finished');
       $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+      $('video').show();
   }, 1000);
   $('.menu-open:checked ~ #pencil, #microphone, #cog, #clock').fadeOut();
   $('.menu-open-button').fadeOut();
   $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #camera').removeClass('wipe').addClass('normal');
+    $('video').hide();
+    document.querySelector('video').srcObject = null;
     $('.menu-open:checked ~ #camera').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
         $('.menu-open:checked ~ #pencil, #microphone, #cog, #clock').fadeIn();
