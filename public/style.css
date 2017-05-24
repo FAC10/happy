@@ -906,3 +906,13 @@ input {
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
+
+.video {
+  display: none;
+  background: #000;
+  width: 70%;
+  margin: 2em 15% 0.5em 15%;
+  position: absolute;
+  top: -415%;
+  right: 0;
+}
