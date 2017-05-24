@@ -96,12 +96,12 @@ margin-left: 11px;
   color: white;
   text-align: center;
   line-height: 80px;
-  -webkit-transform: translate3d(0, 0, 0);
+  /*-webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
   transition: -webkit-transform ease-out 200ms;
   transition: transform ease-out 200ms;
-  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;*/
 }
 
 .menu-open {
@@ -167,24 +167,24 @@ margin-left: 11px;
   color: #ff4081;
 }
 #pencil {
-  -webkit-transition-duration: 70ms;
-          transition-duration: 70ms;
+  /*-webkit-transition-duration: 70ms;
+          transition-duration: 70ms;*/
 }
 .menu-item:nth-child(4) {
-  -webkit-transition-duration: 130ms;
-          transition-duration: 130ms;
+  /*-webkit-transition-duration: 130ms;
+          transition-duration: 130ms;*/
 }
 .menu-item:nth-child(5) {
-  -webkit-transition-duration: 190ms;
-          transition-duration: 190ms;
+  /*-webkit-transition-duration: 190ms;
+          transition-duration: 190ms;*/
 }
 .menu-item:nth-child(6) {
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  /*-webkit-transition-duration: 250ms;
+          transition-duration: 250ms;*/
 }
 .menu-item:nth-child(7) {
-  -webkit-transition-duration: 310ms;
-          transition-duration: 310ms;
+  /*-webkit-transition-duration: 310ms;
+          transition-duration: 310ms;*/
 }
 
 .menu-open-button {
@@ -212,16 +212,42 @@ margin-left: 11px;
           transform: scale(0.8, 0.8) translate3d(0, 0, 0);
 }
 
-.menu-open:checked ~ .menu-item {
+.menu-open:checked ~ .menu-item.normal {
   -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
           transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
 }
-.menu-open:checked ~ #pencil {
+.menu-open:checked ~ #pencil.normal {
   -webkit-transition-duration: 260ms;
           transition-duration: 260ms;
   -webkit-transform: translate3d(-140.42548px, -12.48084px, 0);
           transform: translate3d(-140.42548px, -12.48084px, 0);
 }
+
+.menu-open:checked ~ #camera.normal {
+  -webkit-transition-duration: 440ms;
+          transition-duration: 440ms;
+  -webkit-transform: translate3d(-97.18543px, -95.2491px, 0);
+          transform: translate3d(-97.18543px, -95.2491px, 0);
+}
+.menu-open:checked ~ #microphone.normal {
+  -webkit-transition-duration: 620ms;
+          transition-duration: 620ms;
+  -webkit-transform: translate3d(-0.09158px, -135.99996px, 0);
+          transform: translate3d(-0.09158px, -135.99996px, 0);
+}
+.menu-open:checked ~ #clock.normal {
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  -webkit-transform: translate3d(97.04956px, -95.37192px, 0);
+          transform: translate3d(97.04956px, -95.37192px, 0);
+}
+.menu-open:checked ~ #cog.normal {
+  -webkit-transition-duration: 1080ms;
+          transition-duration: 1080ms;
+  -webkit-transform: translate3d(140.40705px, -12.66307px, 0);
+          transform: translate3d(140.40705px, -12.66307px, 0);
+}
+
 @keyframes pencil {
   0% {transform: translate3d(-140.42548px, -12.48084px, 0); -webkit-transform: translate3d(-140.42548px, -12.48084px, 0); background: #8ea5ce; color: white;}
     50% {transform: translate3d(-3.42548px, -274.48084px, 0); -webkit-transform:translate3d(-3.42548px, -274.48084px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
@@ -231,7 +257,7 @@ margin-left: 11px;
 @keyframes camera {
   0% {transform: translate3d(-97.18543px, -95.2491px, 0); -webkit-transform:translate3d(-97.18543px, -95.2491px, 0); background: #8ea5ce; color: white;}
     50% {transform:translate3d(0.81457px, -275.2491px, 0); -webkit-transform:translate3d(0.81457px, -275.2491px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh; -webkit-transform:translate3d(0.81457px, -275.2491px, 0);}
+    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh; -webkit-transform:translate3d(-142px, -563px, 0);}
 }
 
 @keyframes microphone {
@@ -323,31 +349,6 @@ margin-left: 11px;
 
 .hamburger.active {
   background: #ff4081;
-}
-
-.menu-open:checked ~ #camera {
-  -webkit-transition-duration: 440ms;
-          transition-duration: 440ms;
-  -webkit-transform: translate3d(-97.18543px, -95.2491px, 0);
-          transform: translate3d(-97.18543px, -95.2491px, 0);
-}
-.menu-open:checked ~ #microphone {
-  -webkit-transition-duration: 620ms;
-          transition-duration: 620ms;
-  -webkit-transform: translate3d(-0.09158px, -135.99996px, 0);
-          transform: translate3d(-0.09158px, -135.99996px, 0);
-}
-.menu-open:checked ~ #clock {
-  -webkit-transition-duration: 800ms;
-          transition-duration: 800ms;
-  -webkit-transform: translate3d(97.04956px, -95.37192px, 0);
-          transform: translate3d(97.04956px, -95.37192px, 0);
-}
-.menu-open:checked ~ #cog {
-  -webkit-transition-duration: 1080ms;
-          transition-duration: 1080ms;
-  -webkit-transform: translate3d(140.40705px, -12.66307px, 0);
-          transform: translate3d(140.40705px, -12.66307px, 0);
 }
 
 .fa {
