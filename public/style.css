@@ -199,7 +199,7 @@ margin-left: 11px;
   cursor: pointer;
 }
 .menu-open-button.active {
-    background-color: white;
+    background-color: #8ea5ce;
 }
 
 .menu-open-button:hover {
