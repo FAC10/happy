@@ -606,7 +606,7 @@ $('#pencil').on('click', () => {
   }, 1000);
   $('.menu-open:checked ~ #camera, #microphone, #cog, #clock').fadeOut();
   $('.menu-open-button').fadeOut();
-  $('.menu-open-button active').on('click', () => {
+  $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #pencil').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #pencil').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
@@ -622,7 +622,7 @@ $('#camera').on('click', () => {
   }, 1000);
   $('.menu-open:checked ~ #pencil, #microphone, #cog, #clock').fadeOut();
   $('.menu-open-button').fadeOut();
-  $('.menu-open-button active').on('click', () => {
+  $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #camera').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #camera').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
@@ -638,7 +638,7 @@ $('#microphone').on('click', () => {
   }, 1000);
   $('.menu-open:checked ~ #pencil, #camera, #cog, #clock').fadeOut();
   $('.menu-open-button').fadeOut();
-  $('.menu-open-button active').on('click', () => {
+  $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #microphone').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #microphone').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
@@ -654,7 +654,7 @@ $('#clock').on('click', () => {
   }, 1000);
   $('.menu-open:checked ~ #pencil, #camera, #cog, #microphone').fadeOut();
   $('.menu-open-button').fadeOut();
-  $('.menu-open-button active').on('click', () => {
+  $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #clock').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #clock').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
@@ -670,7 +670,7 @@ $('#cog').on('click', () => {
   }, 1000);
   $('.menu-open:checked ~ #pencil, #camera, #clock, #microphone').fadeOut();
   $('.menu-open-button').fadeOut();
-  $('.menu-open-button active').on('click', () => {
+  $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #cog').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #cog').removeClass('finished');
       $('.menu-open-button, .hamburger').removeClass('active');
