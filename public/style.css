@@ -236,7 +236,19 @@ margin-left: 11px;
 
 @keyframes microphone {
   0% {transform: translate3d(-0.09158px, -135.99996px, 0); background: #8ea5ce; color: white;}
-    50% {transform:translate3d(-0.09158px, -175.99996px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    50% {transform:translate3d(-0.09158px, -255.99996px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+}
+
+@keyframes clock {
+  0% {transform: translate3d(97.04956px, -95.37192px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+}
+
+@keyframes cog {
+  0% {transform: translate3d(140.40705px, -12.66307px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
     100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
 }
 
@@ -259,10 +271,28 @@ margin-left: 11px;
 }
 
 .menu-open:checked ~ #microphone.wipe {
-  animation: camera 1s ease-in-out;
+  animation: microphone 1s ease-in-out;
 }
 
 .menu-open:checked ~ #microphone.wipe.finished {
+  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+  background: white; color: #ff4081;
+}
+
+.menu-open:checked ~ #clock.wipe {
+  animation: clock 1s ease-in-out;
+}
+
+.menu-open:checked ~ #clock.wipe.finished {
+  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+  background: white; color: #ff4081;
+}
+
+.menu-open:checked ~ #cog.wipe {
+  animation: cog 1s ease-in-out;
+}
+
+.menu-open:checked ~ #cog.wipe.finished {
   transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
   background: white; color: #ff4081;
 }
@@ -287,13 +317,13 @@ margin-left: 11px;
   -webkit-transform: translate3d(-0.09158px, -135.99996px, 0);
           transform: translate3d(-0.09158px, -135.99996px, 0);
 }
-.menu-open:checked ~ .menu-item:nth-child(6) {
+.menu-open:checked ~ #clock {
   -webkit-transition-duration: 800ms;
           transition-duration: 800ms;
   -webkit-transform: translate3d(97.04956px, -95.37192px, 0);
           transform: translate3d(97.04956px, -95.37192px, 0);
 }
-.menu-open:checked ~ .menu-item:nth-child(7) {
+.menu-open:checked ~ #cog {
   -webkit-transition-duration: 1080ms;
           transition-duration: 1080ms;
   -webkit-transform: translate3d(140.40705px, -12.66307px, 0);

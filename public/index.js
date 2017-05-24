@@ -644,4 +644,36 @@ $('#microphone').on('click', () => {
         $('.menu-open:checked ~ #pencil, #camera, #cog, #clock').fadeIn();
   })
 });
+$('#clock').on('click', () => {
+  console.log('clicked');
+  $('.menu-open:checked ~ #clock').addClass('wipe');
+  setTimeout(function () {
+    $('.menu-open:checked ~ #clock').addClass('finished');
+      $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+  }, 1000);
+  $('.menu-open:checked ~ #pencil, #camera, #cog, #microphone').fadeOut();
+  $('.menu-open-button').fadeOut();
+  $('.menu-open-button').on('click', () => {
+    $('.menu-open:checked ~ #clock').removeClass('wipe');
+    $('.menu-open:checked ~ #clock').removeClass('finished');
+      $('.menu-open-button, .hamburger').removeClass('active');
+        $('.menu-open:checked ~ #pencil, #camera, #cog, #microphone').fadeIn();
+  })
+});
+$('#cog').on('click', () => {
+  console.log('clicked');
+  $('.menu-open:checked ~ #cog').addClass('wipe');
+  setTimeout(function () {
+    $('.menu-open:checked ~ #cog').addClass('finished');
+      $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+  }, 1000);
+  $('.menu-open:checked ~ #pencil, #camera, #clock, #microphone').fadeOut();
+  $('.menu-open-button').fadeOut();
+  $('.menu-open-button').on('click', () => {
+    $('.menu-open:checked ~ #cog').removeClass('wipe');
+    $('.menu-open:checked ~ #cog').removeClass('finished');
+      $('.menu-open-button, .hamburger').removeClass('active');
+        $('.menu-open:checked ~ #pencil, #camera, #clock, #microphone').fadeIn();
+  })
+});
 });
