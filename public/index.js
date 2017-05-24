@@ -592,3 +592,56 @@ d3.select('#reset').on('click', function() {
 // to run.
 
 initForce();
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  //do work
+
+$('#pencil').on('click', () => {
+  console.log('clicked');
+  $('.menu-open:checked ~ #pencil').addClass('wipe');
+  setTimeout(function () {
+    $('.menu-open:checked ~ #pencil').addClass('finished');
+      $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+  }, 1000);
+  $('.menu-open:checked ~ #camera, #microphone, #cog, #clock').fadeOut();
+  $('.menu-open-button').fadeOut();
+  $('.menu-open-button').on('click', () => {
+    $('.menu-open:checked ~ #pencil').removeClass('wipe');
+    $('.menu-open:checked ~ #pencil').removeClass('finished');
+      $('.menu-open-button, .hamburger').removeClass('active');
+        $('.menu-open:checked ~ #camera, #microphone, #cog, #clock').fadeIn();
+  })
+});
+$('#camera').on('click', () => {
+  console.log('clicked');
+  $('.menu-open:checked ~ #camera').addClass('wipe');
+  setTimeout(function () {
+    $('.menu-open:checked ~ #camera').addClass('finished');
+      $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+  }, 1000);
+  $('.menu-open:checked ~ #pencil, #microphone, #cog, #clock').fadeOut();
+  $('.menu-open-button').fadeOut();
+  $('.menu-open-button').on('click', () => {
+    $('.menu-open:checked ~ #camera').removeClass('wipe');
+    $('.menu-open:checked ~ #camera').removeClass('finished');
+      $('.menu-open-button, .hamburger').removeClass('active');
+        $('.menu-open:checked ~ #pencil, #microphone, #cog, #clock').fadeIn();
+  })
+});
+$('#microphone').on('click', () => {
+  console.log('clicked');
+  $('.menu-open:checked ~ #microphone').addClass('wipe');
+  setTimeout(function () {
+    $('.menu-open:checked ~ #microphone').addClass('finished');
+      $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+  }, 1000);
+  $('.menu-open:checked ~ #pencil, #camera, #cog, #clock').fadeOut();
+  $('.menu-open-button').fadeOut();
+  $('.menu-open-button').on('click', () => {
+    $('.menu-open:checked ~ #microphone').removeClass('wipe');
+    $('.menu-open:checked ~ #microphone').removeClass('finished');
+      $('.menu-open-button, .hamburger').removeClass('active');
+        $('.menu-open:checked ~ #pencil, #camera, #cog, #clock').fadeIn();
+  })
+});
+});
