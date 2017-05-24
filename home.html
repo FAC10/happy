@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Lato" rel="stylesheet">
@@ -11,21 +12,28 @@
 </head>
 
 <body>
+  <form id="content">
+    <input type="text" name="input" class="searchBar">
+    <ul class="tags">
+      <li><a href="#">friends<span class="closeTag"> &times;</span></a></li>
+        <li><a href="#">cats<span class="closeTag"> &times;</span></a></li>
+    </ul>
+    <button type="reset" class="search"></button>
+  </form>
+
   <div id="map">
-<!--     <button id='reset' title='Reset Layout to Beginning'>
-        <i class='fa fa-undo'></i>
-    </button> -->
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Happy memory will be displayed here...</p>
       </div>
+
     </div>
 </div>
 
 
 <script type="text/javascript" src="./public/index.js"></script>
-
+<script type="text/javascript" src="./public/searchbar.js"></script>
 <nav class="menu">
   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
   <label class="menu-open-button" for="menu-open">
