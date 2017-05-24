@@ -223,77 +223,97 @@ margin-left: 11px;
           transform: translate3d(-140.42548px, -12.48084px, 0);
 }
 @keyframes pencil {
-  0% {transform: translate3d(-140.42548px, -12.48084px, 0); background: #8ea5ce; color: white;}
-    50% {transform: translate3d(-3.42548px, -274.48084px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform:translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+  0% {transform: translate3d(-140.42548px, -12.48084px, 0); -webkit-transform: translate3d(-140.42548px, -12.48084px, 0); background: #8ea5ce; color: white;}
+    50% {transform: translate3d(-3.42548px, -274.48084px, 0); -webkit-transform:translate3d(-3.42548px, -274.48084px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform:translate3d(-142px, -563px, 0); -webkit-transform:translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
 }
 
 @keyframes camera {
-  0% {transform: translate3d(-97.18543px, -95.2491px, 0); background: #8ea5ce; color: white;}
-    50% {transform:translate3d(0.81457px, -275.2491px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+  0% {transform: translate3d(-97.18543px, -95.2491px, 0); -webkit-transform:translate3d(-97.18543px, -95.2491px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(0.81457px, -275.2491px, 0); -webkit-transform:translate3d(0.81457px, -275.2491px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh; -webkit-transform:translate3d(0.81457px, -275.2491px, 0);}
 }
 
 @keyframes microphone {
-  0% {transform: translate3d(-0.09158px, -135.99996px, 0); background: #8ea5ce; color: white;}
-    50% {transform:translate3d(-0.09158px, -255.99996px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+  0% {transform: translate3d(-0.09158px, -135.99996px, 0); -webkit-transform:translate3d(-0.09158px, -135.99996px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(-0.09158px, -255.99996px, 0); -webkit-transform:translate3d(-0.09158px, -255.99996px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); -webkit-transform:translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
 }
 
 @keyframes clock {
-  0% {transform: translate3d(97.04956px, -95.37192px, 0); background: #8ea5ce; color: white;}
-    50% {transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+  0% {transform: translate3d(97.04956px, -95.37192px, 0); -webkit-transform:translate3d(97.04956px, -95.37192px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(1.04956px, -271.37192px, 0); -webkit-transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); -webkit-transform:translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
 }
 
 @keyframes cog {
-  0% {transform: translate3d(140.40705px, -12.66307px, 0); background: #8ea5ce; color: white;}
-    50% {transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
-    100% {transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
+  0% {transform: translate3d(140.40705px, -12.66307px, 0); -webkit-transform:translate3d(140.40705px, -12.66307px, 0); background: #8ea5ce; color: white;}
+    50% {transform:translate3d(1.04956px, -271.37192px, 0); -webkit-transform:translate3d(1.04956px, -271.37192px, 0); width: 75px; height: 75px; background: white; color: #ff4081;}
+    100% {transform: translate3d(-142px, -563px, 0); -webkit-transform:translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;}
 }
 
 .menu-open:checked ~ #pencil.wipe {
   animation: pencil 1s ease-in-out;
+  -webkit-animation: pencil 1s ease-in-out;
 }
 
 .menu-open:checked ~ #pencil.wipe.finished {
-  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+  -webkit-transform: translate3d(-142px, -563px, 0);
+  transform: translate3d(-142px, -563px, 0);
+  width: 97vw;
+  height: 98vh;
   background: white; color: #ff4081;
 }
 
 .menu-open:checked ~ #camera.wipe {
   animation: camera 1s ease-in-out;
+  -webkit-animation: camera 1s ease-in-out;
 }
 
 .menu-open:checked ~ #camera.wipe.finished {
-  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+  -webkit-transform: translate3d(-142px, -563px, 0);
+  width: 97vw;
+  height: 98vh;
+  transform: translate3d(-142px, -563px, 0);
   background: white; color: #ff4081;
 }
 
 .menu-open:checked ~ #microphone.wipe {
   animation: microphone 1s ease-in-out;
+  -webkit-animation: microphone 1s ease-in-out;
 }
 
 .menu-open:checked ~ #microphone.wipe.finished {
-  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+    -webkit-transform: translate3d(-142px, -563px, 0);
+  transform: translate3d(-142px, -563px, 0);
+  width: 97vw;
+  height: 98vh;
   background: white; color: #ff4081;
 }
 
 .menu-open:checked ~ #clock.wipe {
   animation: clock 1s ease-in-out;
+    -webkit-animation: clock 1s ease-in-out;
 }
 
 .menu-open:checked ~ #clock.wipe.finished {
-  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+      -webkit-transform: translate3d(-142px, -563px, 0);
+  transform: translate3d(-142px, -563px, 0);
+  width: 97vw;
+  height: 98vh;
   background: white; color: #ff4081;
 }
 
 .menu-open:checked ~ #cog.wipe {
   animation: cog 1s ease-in-out;
+  -webkit-animation: cog 1s ease-in-out;
 }
 
 .menu-open:checked ~ #cog.wipe.finished {
-  transform: translate3d(-142px, -563px, 0); width: 97vw; height: 98vh;
+  -webkit-transform: translate3d(-142px, -563px, 0);
+  transform: translate3d(-142px, -563px, 0);
+  width: 97vw;
+  height: 98vh;
   background: white; color: #ff4081;
 }
 
