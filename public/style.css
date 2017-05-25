@@ -971,7 +971,7 @@ input {
   top: -368%;
   right: 0;
 }
-  
+
 /*Settings*/
 
 .settings {
@@ -986,7 +986,7 @@ input {
       top: 0;
       position: absolute;
       flex-direction: column;
-      margin-top: 200px;
+      margin-top: 185px;
 }
 
 .settings.active > a {
@@ -995,7 +995,7 @@ text-decoration: none;
 width: 100%;
 align-self: center;
 text-align: center;
-flex: 0.3;
+flex: 0.15;
 }
 
 .settings.active > h1 {
@@ -1073,5 +1073,6 @@ circle.zen {
 
 .shuffle img {
   width: 50%;
-margin: 15%;
+  margin-top:10%;
+margin-left: 15%;
 }
