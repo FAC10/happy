@@ -916,3 +916,33 @@ input {
   top: -415%;
   right: 0;
 }
+
+/*Settings*/
+
+.settings {
+  display:none;
+}
+
+.settings.active {
+  display: flex;
+  width: 100%;
+  height: 52%;
+  align-items: center;
+  top: 0;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 55%;
+}
+
+.settings.active > a {
+  color: #666;
+text-decoration: none;
+width: 100%;
+align-self: center;
+text-align: center;
+flex: 1;
+}
+
+.settings.active > h1 {
+flex: 1.2;
+}
