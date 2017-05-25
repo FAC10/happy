@@ -1,0 +1,41 @@
+/*Colour pallette:
+#ffd3f5
+#f91f77
+#00cbd1
+#2190cb
+#f16a5d
+#fcd1ff
+#c8f8f8
+#e8bceb
+#d991de
+#8ea5ce
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+background: linear-gradient(#d991de, #63bbbb);
+color: white;
+font: 16px/26px "Raleway", sans-serif;
+}
+
+.intro-Container {
+  text-align: center;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+
+.intro-Container-Heading {
+  text-align: center;
+  margin: 1em;
+  font-size: 2.5em;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.intro-Container-Text {
+  opacity: 0;
+}
