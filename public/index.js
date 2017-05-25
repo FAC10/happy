@@ -387,6 +387,7 @@ var initForce = function() {
          var close = document.getElementsByClassName("close")[0];
          close.onclick = function(){
           $('.modal, .memoryText, .close, .modal-content__content').removeClass('show');
+          $('.modal-content__heart').removeClass('liked');
          }
 
 
