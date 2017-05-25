@@ -379,14 +379,14 @@ var initForce = function() {
          .on("click", function(){
            $('.modal').addClass('show');
            setTimeout(function () {
-           $('.memoryText, .close').addClass('show');
+           $('.memoryText, .close, .modal-content__content').addClass('show');
          }, 1500);
          })
          .call(drag);
 
          var close = document.getElementsByClassName("close")[0];
          close.onclick = function(){
-          $('.modal, .memoryText, .close').removeClass('show');
+          $('.modal, .memoryText, .close, .modal-content__content').removeClass('show');
          }
 
 
@@ -691,4 +691,9 @@ $('#cog').on('click', () => {
   })
 });
 
+});
+
+
+$('.modal-content__heart').on('click', function() {
+  $('.modal-content__heart').toggleClass('liked');
 });
