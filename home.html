@@ -48,6 +48,7 @@
 
 <script type="text/javascript" src="./public/index.js"></script>
 <script type="text/javascript" src="./public/searchbar.js"></script>
+<script type="text/javascript" src="./public/record.js"></script>
 <nav class="menu">
   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
   <label class="menu-open-button" for="menu-open">
@@ -62,10 +63,13 @@
   <a href="#" class="menu-item normal" id='clock'> <i class="fa fa-clock-o"></i> </a>
   <a href="#" class="menu-item normal" id='cog'> <i class="fa fa-cog"></i> </a>
 
-  <input class="record record--camera" type="file" accept="video/*" capture="environment">
-  <input class="record record--voice" type="file" accept="audio/*" capture>
-  <!-- <video class="video"></video> -->
+  <label class="record-photo">Take a picture
+    <input class="record record--camera" type="file" accept="image/*" capture="camera">
+  </label>
 
+  <label class="record-voice">Record a voice note
+    <input class="record record--voice" type="file" accept="audio/*" capture>
+  </label>
 
 </nav>
 
