@@ -33,8 +33,9 @@ function checkIfSafari(){
      }else if((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1)){
        console.log('should be opera', userAgent);
      }else{
-      $(".shownTag").css("bottom", "75%")
-      $(".tags").css("bottom", "75%")
+//        Uncomment the below code when user testing so it shows on iphone:
+//       $(".shownTag").css("bottom", "75%")
+//       $(".tags").css("bottom", "75%")
      }
   }
 }
