@@ -1048,3 +1048,16 @@ circle.zen {
   stroke-width: 35.5px;
   opacity: 0.5;
 }
+
+.shuffle {
+  position: absolute;
+}
+
+.shuffle.hidden {
+  display: none;
+}
+
+.shuffle img {
+  width: 50%;
+margin: 15%;
+}

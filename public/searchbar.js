@@ -1,5 +1,8 @@
 $(document).ready(function(){
   function expand() {
+  setTimeout(function () {
+    $('.shuffle').toggleClass('hidden');
+  }, 500);
     $(".search").toggleClass("closeSearch");
     $(".searchBar").toggleClass("square");
     if ($(".tags").hasClass("shownTag")) {
