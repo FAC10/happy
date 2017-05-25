@@ -3,6 +3,7 @@ $(document).ready(function(){
   $(".searchBar").delay(250).animate({ opacity: 1 }, 2550)
   $(".menu-open-button").delay(250).animate({ opacity: 1 }, 1000)
   $(".menu-item").delay(1250).animate({ opacity: 1 }, 0)
+  $(".shuffle").delay(250).animate({ opacity: 1 }, 1800)
 
   function expand() {
   setTimeout(function () {
@@ -23,6 +24,7 @@ $(document).ready(function(){
     }
   }
   $('button').on('click', expand);
+
 function checkIfSafari(){
   var userAgent = navigator.userAgent.toLowerCase();
   if (userAgent .indexOf('safari')!=-1){
