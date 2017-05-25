@@ -1,18 +1,20 @@
 $(document).ready(function(){
-  $(".intro-Container-Heading").delay(250).animate({ opacity: 1 }, 2000)
-  $(".intro-Container-Text").delay(250).animate({
-    opacity: 1 }, 4000)
+  $(".intro-Container-Text").delay(100).animate({
+    opacity: 1 }, 2000)
+  $(".nextButton").delay(400).animate({ opacity: 1 }, 2000)
 
-  $('.memButton').on( "click", fadeBackground);
+  $('.memButton').on( "click", fadeAway);
 })
 
 
-function fadeBackground(e){
+function fadeAway(e){
   e.preventDefault();
   setTimeout(function () {
     window.location.href = "./home.html"
-  }, 2000);
-  $(".intro-Container-Heading").delay(250).animate({ opacity: 0 }, 1500)
+  }, 1500);
+  $(".intro-Container-Heading").delay(250).animate({ opacity: 0 }, 1000)
   $(".intro-Container-Text").delay(250).animate({
-    opacity: 0 }, 1500)
+    opacity: 0 }, 1000)
+  $(".nextButton").delay(250).animate({
+      opacity: 0 }, 1000)
 }

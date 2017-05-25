@@ -30,10 +30,12 @@ font: 16px/26px "Raleway", sans-serif;
 
 .intro-Container-Heading {
   text-align: center;
-  margin: 1em;
-  font-size: 2.5em;
+  /*margin: 1em;*/
+  font-size: 5em;
+  font-family: 'Lato', cursive;
   font-weight: bold;
-  opacity: 0;
+  color: #8ea5ce;
+  /*opacity: 0;*/
 }
 
 .intro-Container-Text {
@@ -73,4 +75,15 @@ font: 16px/26px "Raleway", sans-serif;
       text-align: center;
       width: 100%;
       bottom: 0;
+}
+
+.nextButton {
+  opacity: 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.memButton {
+  color: white;
+  font: 14px/24px "Raleway", sans-serif;
 }
