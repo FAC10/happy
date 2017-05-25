@@ -792,7 +792,9 @@ input {
   animation-iteration-count: 1;
 }
 
-.searchBar{  box-sizing: border-box;
+.searchBar{
+  opacity: 0;
+  box-sizing: border-box;
   position: absolute;
   top: 5%;
   width: 50px;
@@ -815,6 +817,7 @@ input {
 }
 
 .search {
+  opacity: 0;
   background: none;
   position: absolute;
   top: 0px;

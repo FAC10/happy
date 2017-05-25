@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $(".search").delay(250).animate({ opacity: 1 }, 2000)
+  $(".searchBar").delay(250).animate({ opacity: 1 }, 2800)
+
   function expand() {
     $(".search").toggleClass("closeSearch");
     $(".searchBar").toggleClass("square");

@@ -16,7 +16,7 @@ html {
 }
 
 body {
-background: linear-gradient(#d991de, #63bbbb);
+background: linear-gradient(#e8bceb, #91cfcf);
 color: white;
 font: 16px/26px "Raleway", sans-serif;
 }
@@ -38,4 +38,39 @@ font: 16px/26px "Raleway", sans-serif;
 
 .intro-Container-Text {
   opacity: 0;
+}
+
+.menu-item, .menu-open-button {
+  background-color: white;
+  border-radius: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 75px;
+  line-height: 80px;
+  margin-bottom: 0px;
+  margin-left: -55px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 75px;
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+      height: 15%;
+      box-sizing: border-box;
+      font-size: 35px;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
 }
