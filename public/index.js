@@ -362,6 +362,7 @@ var initForce = function() {
        .duration(350)
        .style("stroke-width", function(d) {
          return Math.sqrt(d.value);
+
        })
      .style("stroke", 'white')
      ;
@@ -513,7 +514,7 @@ var initForce = function() {
    d3.select(this).classed("node-active", true);
    d3.select(this).select("circle").transition()
      .duration(700)
-     .attr("r", (d.weight * 2 + 12) * 1.5);
+     .attr("r", (d.weight * 2 + 12) * 9.5);
  })
 
  .on("mouseout", function(d) {
@@ -681,17 +682,54 @@ $('#cog').on('click', () => {
   setTimeout(function () {
     $('.menu-open:checked ~ #cog').addClass('finished');
       $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+      $('.settings').addClass('active');
   }, 1000);
   $('.menu-open:checked ~ #pencil, #camera, #clock, #microphone').fadeOut();
   $('.menu-open-button').fadeOut();
   $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #cog').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #cog').removeClass('finished');
-      $('.menu-open-button, .hamburger').removeClass('active');
+      $('.menu-open-button, .hamburger, .settings').removeClass('active');
         $('.menu-open:checked ~ #pencil, #camera, #clock, #microphone').fadeIn();
   })
 });
+});
 
+function themeChange(newClass) {
+  var circles = document.querySelectorAll('circle');
+  var nodes = document.querySelectorAll('.node');
+  document.querySelector('#map').className = newClass;
+  // console.log(circles);
+  circles.forEach((circle) => {
+  circle.className = newClass;
+});
+$('.node, .menu-open-button, .menu-item').removeClass('night').removeClass('calm').removeClass('bright').removeClass('zen');
+$('.node, .menu-open-button, .menu-item').addClass(newClass);
+}
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+$('#night').on('click', ()=> {
+  themeChange('night');
+})
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+$('#calm').on('click', ()=> {
+  themeChange('calm');
+})
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+$('#bright').on('click', ()=> {
+  themeChange('bright');
+})
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+$('#zen').on('click', ()=> {
+  themeChange('zen');
+})
 });
 
 

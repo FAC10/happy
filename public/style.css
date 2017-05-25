@@ -957,3 +957,94 @@ input {
   top: -415%;
   right: 0;
 }
+
+/*Settings*/
+
+.settings {
+  display:none;
+}
+
+.settings.active {
+  display: flex;
+  width: 100%;
+  height: 52%;
+  align-items: center;
+  top: 0;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 55%;
+}
+
+.settings.active > a {
+  color: #666;
+text-decoration: none;
+width: 100%;
+align-self: center;
+text-align: center;
+flex: 1;
+}
+
+.settings.active > h1 {
+flex: 1.2;
+}
+
+circle.calm {
+    opacity: 1;
+}
+
+.node.calm {
+  stroke: white;
+  stroke-width: 9.5px;
+  opacity: 1;
+}
+
+#map.night {
+  background: linear-gradient(#0b0531, #006287, #006287, #f91f77);
+}
+
+circle.night {
+    opacity: 0.4;
+}
+
+.node.night {
+    stroke: white;
+  stroke-width: 18.5px;
+  opacity: 0.5;
+}
+
+.menu-item.night, .menu-open-button.night {
+    background-color: #0b0531;
+  }
+
+
+#map.bright {
+  background: linear-gradient(#f91f77, #ffe346);
+}
+
+circle.bright {
+    opacity: 0.4;
+}
+
+.node.bright {
+  stroke: #ffd1c4;
+  stroke-width: 23.5px;
+  opacity: 0.5;
+}
+
+.menu-item.bright, .menu-open-button.bright {
+    background-color: #f91f77;
+  }
+
+#map.zen {
+  background: linear-gradient(#9DAFD3, #c8f8f8);
+}
+
+circle.zen {
+    opacity: 0.4;
+}
+
+.node.zen {
+  stroke: #fdacab;
+  stroke-width: 35.5px;
+  opacity: 0.5;
+}
