@@ -597,7 +597,13 @@ d3.select('#reset').on('click', function() {
 initForce();
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  //do work
+
+  $('.shuffle').on("click", function(){
+    $('.modal').addClass('show');
+    setTimeout(function () {
+    $('.memoryText, .close, .modal-content__content').addClass('show');
+  }, 1500);
+});
 
 $('#pencil').on('click', () => {
   console.log('clicked');

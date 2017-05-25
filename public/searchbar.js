@@ -5,6 +5,9 @@ $(document).ready(function(){
   $(".menu-item").delay(1250).animate({ opacity: 1 }, 0)
 
   function expand() {
+  setTimeout(function () {
+    $('.shuffle').toggleClass('hidden');
+  }, 500);
     $(".search").toggleClass("closeSearch");
     $(".searchBar").toggleClass("square");
     if ($(".tags").hasClass("shownTag")) {
