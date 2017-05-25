@@ -13,6 +13,9 @@
   crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Lato" rel="stylesheet">
       <link rel="stylesheet" href="./public/style.css">
+      <link rel="icon"
+            type="image/png"
+            href="./public/assets/favicon.png">
 </head>
 
 <body>
@@ -29,9 +32,12 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p class = 'memoryText'>Happy memory will be displayed here...</p>
+        <div class="modal-content__content">
+          <img class="modal-content__img" src="assets/memory.jpg" alt="A happy memory">
+          <p class = 'memoryText'>Cats are so funny! I love them!</p>
+          <div class='modal-content__heart-container'><i class="fa fa-heart-o modal-content__heart" aria-hidden="true"></i></div>
+        </div>
       </div>
-
     </div>
 </div>
 
@@ -79,4 +85,13 @@
       </filter>
     </defs>
 </svg>
+
+<div class = 'settings'>
+<h1>Themes</h1>
+<a href='#' id = 'calm'>Calm</a>
+<a href='#' id = 'night'>Night</a>
+<a href='#' id = 'bright'>Bright</a>
+<a href='#' id = 'zen'>Zen</a>
+</div>
+
 </body>
