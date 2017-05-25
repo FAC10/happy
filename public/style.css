@@ -744,6 +744,7 @@ input {
   bottom:300%;
 	list-style:none;
 	}
+
 .shownTag{
     display: block;
   	margin:0;
@@ -808,6 +809,7 @@ input {
 .tags a:hover:before{border-color:transparent white transparent transparent;}
 
 #content {
+  overflow: visible;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1064,6 +1066,7 @@ circle.zen {
 }
 
 .shuffle {
+  opacity: 0;
   position: absolute;
 }
 
