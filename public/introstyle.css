@@ -87,3 +87,8 @@ font: 16px/26px "Raleway", sans-serif;
   color: white;
   font: 14px/24px "Raleway", sans-serif;
 }
+
+input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
