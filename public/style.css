@@ -962,7 +962,7 @@ input {
   right: 0;
 }
 
-.record {
+/*.record {
   display: none;
   background: greenyellow;
   width: 70%;
@@ -970,8 +970,40 @@ input {
   position: absolute;
   top: -368%;
   right: 0;
+}*/
+
+.record-photo {
+  display: none;
 }
-  
+
+.record-voice {
+  display: none;
+}
+
+label.record-photo, label.record-voice {
+  margin: 1em 0;
+  position: absolute;
+  top: -300%;
+  right: 20%;
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+  border: 2px solid #666;
+  background-color: #f91f77;
+  color: #fff;
+  width: 60%;
+  line-height: 1.2em;
+}
+
+/* Look like a clicked/depressed button */
+label.record-photo:active, label.record-voice:active {
+  border-color: #CCC #EEE #EEE #CCC;
+}
+
+/* This is the part that actually hides the 'Choose file' text box for camera inputs */
+label.record-photo input[accept*="image"], label.record-voice input[accept*="audio"] {
+  display: none;
+}
+
 /*Settings*/
 
 .settings {
