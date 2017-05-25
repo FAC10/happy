@@ -33,7 +33,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="modal-content__content">
-          <img class="modal-content__img" src="assets/memory.jpg" alt="A happy memory">
+          <img class="modal-content__img" src="public/assets/memory.jpg" alt="A happy memory">
           <p class = 'memoryText'>Cats are so funny! I love them!</p>
           <div class='modal-content__heart-container'><i class="fa fa-heart-o modal-content__heart" aria-hidden="true"></i></div>
         </div>
@@ -58,8 +58,9 @@
   <a href="#" class="menu-item normal" id='clock'> <i class="fa fa-clock-o"></i> </a>
   <a href="#" class="menu-item normal" id='cog'> <i class="fa fa-cog"></i> </a>
 
-
-  <video class="video"></video>
+  <input class="record record--camera" type="file" accept="video/*" capture="environment">
+  <input class="record record--voice" type="file" accept="audio/*" capture>
+  <!-- <video class="video"></video> -->
 
 
 </nav>
