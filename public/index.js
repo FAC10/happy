@@ -703,8 +703,8 @@ function themeChange(newClass) {
   circles.forEach((circle) => {
   circle.className = newClass;
 });
-$('.node, .menu-open-button, .menu-item').removeClass('night').removeClass('calm').removeClass('bright').removeClass('zen');
-$('.node, .menu-open-button, .menu-item').addClass(newClass);
+$('.node, .menu-open-button, .menu-item, .menu-open-button.active').removeClass('night').removeClass('calm').removeClass('bright').removeClass('zen');
+$('.node, .menu-open-button, .menu-item, .menu-open-button.active').addClass(newClass);
 }
 
 
