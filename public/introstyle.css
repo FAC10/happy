@@ -1,0 +1,89 @@
+/*Colour pallette:
+#ffd3f5
+#f91f77
+#00cbd1
+#2190cb
+#f16a5d
+#fcd1ff
+#c8f8f8
+#e8bceb
+#d991de
+#8ea5ce
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+background: linear-gradient(#e8bceb, #91cfcf);
+color: white;
+font: 16px/26px "Raleway", sans-serif;
+}
+
+.intro-Container {
+  text-align: center;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+
+.intro-Container-Heading {
+  text-align: center;
+  /*margin: 1em;*/
+  font-size: 5em;
+  font-family: 'Lato', cursive;
+  font-weight: bold;
+  color: #8ea5ce;
+  /*opacity: 0;*/
+}
+
+.intro-Container-Text {
+  opacity: 0;
+}
+
+.menu-item, .menu-open-button {
+  background-color: white;
+  border-radius: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 75px;
+  line-height: 80px;
+  margin-bottom: 0px;
+  margin-left: -55px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 75px;
+  z-index: 2;
+}
+
+.menu {
+  position: absolute;
+      height: 15%;
+      box-sizing: border-box;
+      font-size: 35px;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+}
+
+.nextButton {
+  opacity: 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.memButton {
+  color: white;
+  font: 14px/24px "Raleway", sans-serif;
+}
