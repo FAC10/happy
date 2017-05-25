@@ -957,3 +957,13 @@ input {
   top: -415%;
   right: 0;
 }
+
+.record {
+  display: none;
+  background: greenyellow;
+  width: 70%;
+  margin: 2em 15%;
+  position: absolute;
+  top: -368%;
+  right: 0;
+}
