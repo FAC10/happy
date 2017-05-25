@@ -725,7 +725,6 @@ $('#zen').on('click', ()=> {
 })
 });
 
-
 $('.modal-content__heart').on('click', function() {
   $('.modal-content__heart').toggleClass('liked');
 });
