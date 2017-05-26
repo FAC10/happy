@@ -400,6 +400,10 @@ var initForce = function() {
                 $(idToKeep).css('display', 'initial')
               }
             }
+            if('$.menu-open:checked') {
+              $('.menu-open').prop('checked', false);
+              console.log(1)
+            }
           }
 
 
