@@ -3,6 +3,10 @@ An app that makes you happy!
 
 Specifically, an app that enables you to save things/memories that have made you happy in the form of pictures, voice recordings, or urls, so that when you are feeling like you need a boost, you can access a memory that will reliably lift your mood.
 
+### Viewing the app
+
+Currently, this app has been developed to look good on Chrome desktop, when you view as an iPhone 6 in the developer tools. It will be further developed to look good on other mobile devices, but is not optimised for desktop as it is intended for mobile use.
+
 ### User Stories
 
 The app is aimed at young users, ages 12-18, and the goal is to help them maintain good mental health (though it could be used by a variety of users).
