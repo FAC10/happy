@@ -378,6 +378,31 @@ var initForce = function() {
            return d.y;
          })
          .on("click", function(){
+          if ($('.menu-item').hasClass('wipe')) {
+            var iconButtons = $('.menu-item');
+            var iconButtonsObj = {};
+            for (var prop in iconButtons){
+              if (prop < 5){
+                var id = iconButtons[prop]['id'];
+                var className = iconButtons[prop]['className'];
+                iconButtonsObj[id] = className;
+              }
+            }
+            for (var idProp in iconButtonsObj){
+              if (iconButtonsObj[idProp] == "menu-item wipe finished"){
+                var idToChange = `#${idProp}`;
+                $(idToChange).toggleClass('wipe')
+                $(idToChange).toggleClass('finished')
+                $(idToChange).toggleClass('normal')
+              }
+              else {
+                var idToKeep = `#${idProp}`;
+                $(idToKeep).css('display', 'initial')
+              }
+            }
+          }
+
+
            $('.modal').addClass('show');
            setTimeout(function () {
            $('.memoryText, .close, .modal-content__content').addClass('show');
