@@ -14,7 +14,7 @@ $(document).ready(function(){
 function fadeAway(e){
   e.preventDefault();
   setTimeout(function () {
-    window.location.href = "./home.html"
+    window.location.href = "./login.html"
   }, 1500);
   $(".intro-Container-Heading").delay(250).animate({ opacity: 0 }, 1000)
   $(".intro-Container-Text1, .intro-Container-Text2, .intro-Container-Text3").delay(250).animate({
