@@ -25,6 +25,7 @@ background: linear-gradient(#e8bceb, #91cfcf);
 color: #666;
 font: 16px/26px "Raleway", sans-serif;
 }
+
 svg{
   display: block;
   margin: auto;
@@ -971,7 +972,7 @@ input {
   top: -368%;
   right: 0;
 }
-  
+
 /*Settings*/
 
 .settings {
