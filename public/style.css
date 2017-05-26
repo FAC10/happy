@@ -25,6 +25,7 @@ background: linear-gradient(#e8bceb, #91cfcf);
 color: #666;
 font: 16px/26px "Raleway", sans-serif;
 }
+
 svg{
   display: block;
   margin: auto;
@@ -995,7 +996,6 @@ label.record-photo, label.record-voice {
   width: 60%;
   line-height: 1.2em;
 }
-
 /* Look like a clicked/depressed button */
 label.record-photo:active, label.record-voice:active {
   border-color: #CCC #EEE #EEE #CCC;
@@ -1005,7 +1005,6 @@ label.record-photo:active, label.record-voice:active {
 label.record-photo input[accept*="image"], label.record-voice input[accept*="audio"] {
   display: none;
 }
-
 /*Settings*/
 
 .settings {
