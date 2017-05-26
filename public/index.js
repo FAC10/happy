@@ -378,6 +378,9 @@ var initForce = function() {
            return d.y;
          })
          .on("click", function(){
+           if('$.menu-open:checked') {
+             $('.menu-open').prop('checked', false);
+           }
           if ($('.menu-item').hasClass('wipe')) {
             var iconButtons = $('.menu-item');
             var iconButtonsObj = {};
@@ -402,7 +405,6 @@ var initForce = function() {
             }
             if('$.menu-open:checked') {
               $('.menu-open').prop('checked', false);
-              console.log(1)
             }
           }
 
