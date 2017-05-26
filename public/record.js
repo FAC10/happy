@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $('#pencil').on('click', () => {
     setTimeout(function () {
         $('.record-text').show();
-    }, 1100);
+    }, 1300);
     $('.menu-open-button').on('click', () => {
       $('.record-text').hide();
       $('.record--submit').val('Save');
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $('#camera').on('click', () => {
     setTimeout(function () {
         $('.record-photo').show();
-    }, 1100);
+    }, 1300);
     $('.menu-open-button').on('click', () => {
       $('.record-photo').hide();
     });
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $('#microphone').on('click', () => {
     setTimeout(function () {
         $('.record-voice').show();
-    }, 1100);
+    }, 1300);
     $('.menu-open-button').on('click', () => {
       $('.record-voice').hide();
     });
