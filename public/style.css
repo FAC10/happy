@@ -964,32 +964,52 @@ input {
   right: 0;
 }
 
-/*.record {
-  display: none;
-  background: greenyellow;
-  width: 70%;
-  margin: 2em 15%;
-  position: absolute;
-  top: -368%;
-  right: 0;
-}*/
-
-.record-photo {
+.record-text, .record-photo, .record-voice {
   display: none;
 }
 
-.record-voice {
-  display: none;
+.record--text {
+  font-size: 0.8em;
+  padding: 0.8em;
+  margin-top: 1em;
+  height: 8em;
+  width: 100%;
+}
+
+label.record-text {
+  border-radius: 5%;
+  font-size: 0.7em;
+  /*height: 320%;*/
+  margin: 1em 0;
+  position: absolute;
+  top: -395%;
+  right: 17%;
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+  background-color: #f91f77;
+  color: #fff;
+  width: 66%;
+  line-height: 1.2em;
+}
+
+.record--submit {
+  color: #fff;
+  margin-top: 7%;
+  font-size: 0.9em;
+  padding: 0.3em 0.9em;
+  border-radius: 5%;
+  border: none;
+  background-color: #fb78ad;
 }
 
 label.record-photo, label.record-voice {
+  border-radius: 5%;
   margin: 1em 0;
   position: absolute;
   top: -300%;
   right: 20%;
   /* Styles to make it look like a button */
   padding: 0.5em;
-  border: 2px solid #666;
   background-color: #f91f77;
   color: #fff;
   width: 60%;
