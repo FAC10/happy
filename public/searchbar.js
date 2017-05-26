@@ -23,7 +23,7 @@ $(document).ready(function(){
       $('input').blur();
     }
   }
-  $('button').on('click', expand);
+  $('#searchButton').on('click', expand);
 
 function checkIfSafari(){
   var userAgent = navigator.userAgent.toLowerCase();
