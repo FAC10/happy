@@ -724,13 +724,14 @@ $('#clock').on('click', () => {
   setTimeout(function () {
     $('.menu-open:checked ~ #clock').addClass('finished');
       $('.menu-open-button, .hamburger').fadeIn().addClass('active');
+      $('.notifications').addClass('active');
   }, 1000);
   $('.menu-open:checked ~ #pencil, #camera, #cog, #microphone').fadeOut();
   $('.menu-open-button').fadeOut();
   $('.menu-open-button').on('click', () => {
     $('.menu-open:checked ~ #clock').removeClass('wipe').addClass('normal');
     $('.menu-open:checked ~ #clock').removeClass('finished');
-      $('.menu-open-button, .hamburger').removeClass('active');
+      $('.menu-open-button, .hamburger, .notifications').removeClass('active');
         $('.menu-open:checked ~ #pencil, #camera, #cog, #microphone').fadeIn();
   })
 });
@@ -793,3 +794,21 @@ $('#zen').on('click', ()=> {
 $('.modal-content__heart').on('click', function() {
   $('.modal-content__heart').toggleClass('liked');
 });
+
+$(document).ready(function(){
+    $(".days a").click(function(){
+        $(this).toggleClass('active');
+    });
+});
+
+$(document).ready(function(){
+    $(".savetime").click(function(){
+        $(this).toggleClass('active');
+        if ($('.savetime').hasClass('active')) {
+          $('.savetime.active').text('Remove all');
+        }
+        else {
+          $('.savetime').text('Set notifications');
+        }
+      });
+    });

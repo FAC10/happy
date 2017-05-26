@@ -1126,3 +1126,55 @@ circle.zen {
   margin-top:10%;
 margin-left: 15%;
 }
+
+.notifications.active {
+    width: 100%;
+    display: block;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.days a {
+  padding: 2%;
+  font-size: 1.2rem;
+  border: 1px solid #f91f77;
+  color: #f91f77
+}
+
+.days a.active {
+  background: #cdb6e7;
+  border: 1px solid #cdb6e7;
+  color: white;
+}
+
+.time {
+  font-size: 2rem;
+  background: #cbb5e6;
+  width: 33vw;
+  text-align: center;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 8%;
+  }
+
+  .savetime {
+    padding: 4%;
+font-size: 1.2rem;
+margin-top: 6%;
+color: #f91f77;
+border: 1px solid #f91f77;
+background: white;
+  }
+
+  .savetime.active {
+    background: #f91f77;
+    color: white;
+  }
+
+  button:focus {
+  outline: none;
+}
