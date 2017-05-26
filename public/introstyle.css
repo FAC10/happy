@@ -47,7 +47,8 @@ font: 16px/26px "Raleway", sans-serif;
 
 .intro-Container-Text3 {
   top: 60vh;
-  left: -1%;
+      left: 4%;
+      width: 90%;
 }
 
 @keyframes highlight {
