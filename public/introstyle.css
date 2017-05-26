@@ -28,18 +28,66 @@ font: 16px/26px "Raleway", sans-serif;
   margin: auto;
 }
 
-.intro-Container-Heading {
-  text-align: center;
-  /*margin: 1em;*/
-  font-size: 5em;
-  font-family: 'Lato', cursive;
-  font-weight: bold;
-  color: #8ea5ce;
-  /*opacity: 0;*/
+.intro-Container-Text1, .intro-Container-Text2, .intro-Container-Text3 {
+  font-size: 1.5rem;
+      position: absolute;
+      margin: 0 auto;
+      opacity: 0;
 }
 
-.intro-Container-Text {
-  opacity: 0;
+.intro-Container-Text1 {
+  top: 35vh;
+  left: 18%;
+}
+
+.intro-Container-Text2 {
+  top: 48vh;
+  left: 8%;
+}
+
+.intro-Container-Text3 {
+  top: 60vh;
+      left: 4%;
+      width: 90%;
+}
+
+@keyframes highlight {
+    0% {background: white; transform-origin: left; transform :scaleX(0); visibility: hidden;}
+    45% {transform-origin: left;}
+50% {background: white; transform: scaleX(1); visibility: visible;}
+55% {transform-origin: right;}
+100% {background: white; transform-origin: right; transform: scaleX(0); visibility: hidden;}
+}
+
+.intro-Container-Text1:before, .intro-Container-Text2:before, .intro-Container-Text3:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+}
+
+.intro-Container-Text1::before {
+    animation: highlight 0.5s ease-in-out 0.2s;
+}
+
+.intro-Container-Text2::before {
+    animation: highlight 0.5s ease-in-out 1.2s;
+}
+
+.intro-Container-Text3::before {
+    animation: highlight 0.5s ease-in-out 2.1s;
+}
+
+.intro-Container-Heading {
+  width: 119%;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-left: -9%;
 }
 
 .menu-item, .menu-open-button {
@@ -80,12 +128,17 @@ font: 16px/26px "Raleway", sans-serif;
 .nextButton {
   opacity: 0;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 54vh;
 }
 
 .memButton {
-  color: white;
-  font: 14px/24px "Raleway", sans-serif;
+  font: "Raleway", sans-serif;
+  font-size: 2rem;
+      color: white;
+      letter-spacing: 0.3rem;
+      background: #8ea5ce;
+      border-radius: 4%;
+      font-weight: 100;
 }
 
 input {

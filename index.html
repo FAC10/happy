@@ -5,55 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>happy</title>
   <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet">
+          <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Indie+Flower|Lato" rel="stylesheet">
-      <link rel="stylesheet" href="./public/style.css">
-      <link rel="icon"
-            type="image/png"
-            href="./public/assets/favicon.png">
+      <link rel="stylesheet" href="./public/introstyle.css">
 </head>
-
 <body>
-  <h1 class="app-title">happy</h1>
-  <div class="form-wrap">
-    <div class="tabs">
-      <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
-      <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
-    </div><!--.tabs-->
+    <div class="intro-Container">
+      <img src='./public/assets/happy.png' class="intro-Container-Heading"/>
+      <p class="intro-Container-Text1"><span>Welcome to Happy.</span></p>
+      <p class="intro-Container-Text2">Save your happy memories.</p>
+      <p class="intro-Container-Text3">Explore whenever you need cheering up!</p>
+     </div>
+    <div class="nextButton">
+      <input type="submit" value="Continue" class="memButton"/>
+    </div>
 
-    <div class="tabs-content">
-      <div id="signup-tab-content" class="active">
-        <form class="signup-form">
-          <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-          <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
-          <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
-          <a href="./intro.html"><input class="button" value="Sign Up"></a>
-        </form><!--.login-form-->
-        <div class="help-text">
-          <p>By signing up, you agree to our</p>
-          <p><a href="#">Terms of service</a></p>
-        </div><!--.help-text-->
-      </div><!--.signup-tab-content-->
-
-      <div id="login-tab-content">
-        <form class="login-form">
-          <input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
-          <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
-          <input type="checkbox" class="checkbox" id="remember_me">
-          <label for="remember_me">Remember me</label>
-
-          <a href="./intro.html"><input class="button" value="Login"></a>
-        </form><!--.login-form-->
-        <div class="help-text">
-          <p><a href="#">Forget your password?</a></p>
-        </div><!--.help-text-->
-      </div><!--.login-tab-content-->
-    </div><!--.tabs-content-->
-  </div><!--.form-wrap-->
-
-
-<script type="text/javascript" src="./public/signup.js"></script>
-
-
+  <script type="text/javascript" src="./public/introscripts.js"></script>
 </body>
