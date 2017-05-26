@@ -13,9 +13,12 @@
 
 html {
   height: 100%;
+  background: #e6ebef;
 }
 
 body {
+  width: 375px;
+    height: 667px;
 background: linear-gradient(#e8bceb, #91cfcf);
 color: white;
 font: 16px/26px "Raleway", sans-serif;
