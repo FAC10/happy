@@ -416,21 +416,21 @@ margin-left: 11px;
 }
 
 .modal-content__heart {
-  font-size: 1.5em;
+  font-size: 4em;
   color: grey;
 }
 
 @keyframes heart {
-  0% {font-size: 0.5em;}
-    50% {font-size: 1.5em;}
-    100% {font-size: 2.5em;}
+  0% {font-size: 3em;}
+    50% {font-size: 4em;}
+    100% {font-size: 5em;}
 }
 
 .modal-content__heart.liked {
   animation: heart 0.4s ease-in-out;
   -webkit-animation: heart 0.4s ease-in-out;
   color: #e2264d;
-  font-size: 2.5em;
+  font-size: 5em;
 }
 
 * {
@@ -965,32 +965,52 @@ input {
   right: 0;
 }
 
-/*.record {
-  display: none;
-  background: greenyellow;
-  width: 70%;
-  margin: 2em 15%;
-  position: absolute;
-  top: -368%;
-  right: 0;
-}*/
-
-.record-photo {
+.record-text, .record-photo, .record-voice {
   display: none;
 }
 
-.record-voice {
-  display: none;
+.record--text {
+  font-size: 0.8em;
+  padding: 0.8em;
+  margin-top: 1em;
+  height: 8em;
+  width: 100%;
+}
+
+label.record-text {
+  border-radius: 5%;
+  font-size: 0.7em;
+  /*height: 320%;*/
+  margin: 1em 0;
+  position: absolute;
+  top: -395%;
+  right: 17%;
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+  background-color: #f91f77;
+  color: #fff;
+  width: 66%;
+  line-height: 1.2em;
+}
+
+.record--submit {
+  color: #fff;
+  margin-top: 7%;
+  font-size: 0.9em;
+  padding: 0.3em 0.9em;
+  border-radius: 5%;
+  border: none;
+  background-color: #fb78ad;
 }
 
 label.record-photo, label.record-voice {
+  border-radius: 5%;
   margin: 1em 0;
   position: absolute;
   top: -300%;
   right: 20%;
   /* Styles to make it look like a button */
   padding: 0.5em;
-  border: 2px solid #666;
   background-color: #f91f77;
   color: #fff;
   width: 60%;
